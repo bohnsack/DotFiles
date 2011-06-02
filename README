@@ -1,9 +1,9 @@
 I normally clone this directory into my home directory and then make symlinks
 from the normal location of the dot-file to the git-controlled file.  I
-normally  put the file into the git project without the beginning dot.
+normally put the file into the git project without the beginning dot.
 
 E.g.,
 
     cd ~
-    git@github.com:bohnsack/DotFiles.git
+    git clone t git@github.com:bohnsack/DotFiles.git
     ln -sf ~/DotFiles/screenrc ~/.screenrc
