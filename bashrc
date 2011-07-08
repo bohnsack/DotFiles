@@ -4,7 +4,7 @@
 
 # Source global definitions
 if [ -f /etc/bashrc ]; then
-	. /etc/bashrc
+    . /etc/bashrc
 fi
 
 # Make the matches that grep finds show up color hilighted (in green)
@@ -25,3 +25,5 @@ alias h=history
 hf(){
       grep "$@" ~/.bash_history
 }
+
+EDITOR=vim
