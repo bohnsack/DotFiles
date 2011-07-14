@@ -23,7 +23,12 @@ set incsearch  " Incremental search
 
 set laststatus=2 " show status line?  Yes, always! Even for only one buffer.
 set wildmenu     " turn on wildmatch show all possible matches with file name
+" Have the tab completion behave similarly to a shell, i.e. complete only up
+" to the point of ambiguity (while still showing you what your options are)
+set wildmode=list:longest
+
 set nobackup     " backups are for wimps  ;-)
+set visualbell   " Instead of emitting an obnoxious noise, the window will flash very briefly
 
 " Paste Mode On/Off 
 map <F12> :call Paste_on_off()<CR>
@@ -51,6 +56,9 @@ imap <S-CR>    <CR><CR>end<Esc>-cc
 " select text, resize panes, etc.  If you want an normal X11 copy that does't
 " move the vim cursor, use shift select.
 set mouse=a " allow the mouse to do stuff
+
+" Allow the about mouse stuff to work inside of screen
+set ttymouse=xterm2
 
 " Toggle the NERDTree file browser.  Requires installation of NERDTree plugin:
 " http://www.vim.org/scripts/script.php?script_id=1658
