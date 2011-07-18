@@ -27,3 +27,7 @@ hf(){
 }
 
 EDITOR=vim
+
+# Add some color to the prompt
+export PS1='[\u@\h \W]\[\e[0;36m\]\$\[\e[0m\] '
+
