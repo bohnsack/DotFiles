@@ -57,8 +57,9 @@ imap <S-CR>    <CR><CR>end<Esc>-cc
 " move the vim cursor, use shift select.
 set mouse=a " allow the mouse to do stuff
 
-" Allow the about mouse stuff to work inside of screen
-set ttymouse=xterm2
+" Allow mouse stuff to work inside of screen and tmux (resize splits, work
+" with NERDtree pane, click on minibufexplorer "tabs" etc.
+set ttymouse=xterm
 
 " Toggle the NERDTree file browser.  Requires installation of NERDTree plugin:
 " http://www.vim.org/scripts/script.php?script_id=1658
