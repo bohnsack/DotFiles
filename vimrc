@@ -11,7 +11,7 @@ set list             "show exactly what's in file.  E.g., tab characters
 set lcs=tab:»·       "show tabs as this funny character
 set lcs+=trail:·     "show trailing spaces as this funny character
 
-"set autoindent
+set autoindent
 "set textwidth=76
 
 set showcmd    " Show (partial) command in status line.
@@ -81,3 +81,16 @@ let g:miniBufExplUseSingleClick = 1
 " 2) tComment:  use "gc" to comment/uncomment visually selected text or "gcc"
 "               on a single line
 "    http://www.vim.org/scripts/script.php?script_id=1173
+
+" Enable 256 colors for the zenburn colorscheme
+set t_Co=256
+
+" Setup the zenburn color scheme, which assumes backgound of #3a3a3a
+"colors zenburn
+" Setup ir_black color scheme: http://blog.toddwerth.com/entries/8
+colors ir_black
+
+" Don't convert input tabs into spaces (as is the default in this .vimrc),
+" when dealing with Makefiles.  Makefiles require tabs '\t' or they don't
+" work.
+:autocmd FileType make set noexpandtab
