@@ -1,0 +1,7 @@
+[user]
+    name = Matthew Bohnsack
+    email = bohnsack@gmail.com
+[color]
+    ui = true
+[alias]
+    l = log --decorate=short --oneline --graph  --all
