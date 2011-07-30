@@ -49,3 +49,4 @@ export PS1='[\u@\h \w]\[\e[0;36m\]\$\[\e[0m\] ' # standard
 alias u='pushd'
 alias o='popd'
 alias h='history'
+alias ll='ls -l'
