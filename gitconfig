@@ -5,3 +5,12 @@
     ui = true
 [alias]
     l = log --decorate=short --oneline --graph  --all
+    s = status
+    a = add
+    c = commit
+    b = branch
+    r = rebase
+    m = merge
+[core]
+    autocrlf = input
+    safecrlf = true
