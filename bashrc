@@ -44,9 +44,17 @@ EDITOR=vim
 #export PS1="\[`EXT_COLOR 187`\]\u@\h\[`CLOSE_COLOR`\]\[`EXT_COLOR 174`\] \w\[`CLOSE_COLOR`\] $ " # zenburn
 export PS1='[\u@\h \w]\[\e[0;36m\]\$\[\e[0m\] ' # standard
 
+# Make pushd not print out the list of directories on the stack
+#pushd()
+#{
+    #builtin pushd "$@" > /dev/null
+#}
 
 # Aliases
-alias u='pushd'
+alias p='pushd'
 alias o='popd'
+alias d='dirs -v'
 alias h='history'
 alias ll='ls -l'
+alias get='git'
+
